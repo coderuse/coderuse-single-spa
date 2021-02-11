@@ -21,6 +21,12 @@ registerApplication({
   activeWhen: ["/hello-react"]
 });
 
+registerApplication({
+  name: "@coderuse/vue",
+  app: () => System.import("@coderuse/vue"),
+  activeWhen: ["/hello-vue"]
+});
+
 start({
   urlRerouteOnly: true,
 });
