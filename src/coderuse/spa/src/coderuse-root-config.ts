@@ -15,6 +15,12 @@ registerApplication({
   activeWhen: ["/hello-angular"]
 });
 
+registerApplication({
+  name: "hello-react",
+  app: () => System.import("hello-react"),
+  activeWhen: ["/hello-react"]
+});
+
 start({
   urlRerouteOnly: true,
 });
